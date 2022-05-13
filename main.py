@@ -10,27 +10,6 @@ def make_bold(function):
         return "<b>" + function() + "</b>"
     return wrapper_function
 
-def make_blue(function):
-    def wrapper_function(*args):
-        function(args)
-        if function(args) < num:
-            return "<h1 style='color:blue'>" + function() + "</h1>"
-    return wrapper_function
-
-def make_red(function):
-    def wrapper_function(*args):
-        function(args)
-        if function(args) > num:
-            return "<h1 style='color:red'>" + function() + "</h1>"
-    return wrapper_function
-
-def make_green(function):
-    def wrapper_function(*args):
-        function(args)
-        if function(args) == num:
-            return "<h1 style='color:green'>" + function() + "</h1>"
-    return wrapper_function
-
 def header(function):
     def wrapper_function():
         return "<h1>" + function() + "</h1>"
