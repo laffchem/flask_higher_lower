@@ -5,11 +5,6 @@ app = Flask(__name__)
 
 num = random.randint(0, 9)
 
-def make_bold(function):
-    def wrapper_function():
-        return "<b>" + function() + "</b>"
-    return wrapper_function
-
 def header(function):
     def wrapper_function():
         return "<h1>" + function() + "</h1>"
